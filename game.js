@@ -41,9 +41,7 @@ window.onload = function(){
      },(1000/framePerSecond)); 
      
     canvas.addEventListener("mousedown",handMouseClick); 
-     
    
-     
      canvas.addEventListener("mousemove",function(evt){
        var mousePos = calculateMousePos(evt);
        paddle1Y = mousePos.y -  (PADDLE_HEIGHT/2); 
@@ -147,7 +145,7 @@ function drawEverything(){
          canvasContext.fillText("You Won!🚩️",300,200);
         } 
         else if(player2Score >= WINNING_SCORE){
-          canvasContext.fillText("Computer Won!💻️",350,200);
+          canvasContext.fillText("Computer Won!💻️",300,200);
         
         }
        
